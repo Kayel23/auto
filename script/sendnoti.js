@@ -2,7 +2,7 @@ const axios = require("axios");
 const fs = require("fs-extra");
 const path = require("path");
 
-module.exports.☺️config = {
+module.exports.config = {
 	name: "sendnoti",
 	version: "1.1.0",
 	role: 2,
@@ -13,7 +13,7 @@ module.exports.☺️config = {
 	cooldown: 0,
 };
 
-module.exports.☺️run = async function ({ api, event, args, admin }) {
+module.exports.run = async function ({ api, event, args, admin }) {
 	const threadList = await api.getThreadList(100, null, ["INBOX"]);
 	let sentCount = 0;
 	const custom = args.join(" ");
