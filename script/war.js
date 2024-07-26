@@ -20,11 +20,11 @@ module.exports.run = async function({ api, args, event, admin }) {
 	var a = function(a) {
 		api.sendMessage(a, event.threadID);
 	};
-	a("ginalit mo si Clarence putanginamo ka walang iyakan ah bwakananginaka eh");
+	a("ginalit moko ha, putanginamo ka walang iyakan ah bwakananginaka eh");
 	setTimeout(() => {
 		a({
 			body:
-				"gumagamit ka nalang bot ingay mo pa tanginaka ket nga siguro reboot ng cp mo di mo alam dami mong satsat ampota"
+				"ulol gago tarantado tanga bastos walang modo baliw inutil mangmang bobo siraulo tangina ka sinto sinto kulangkulang may sayad abnormal baliw autistic walang alam malandi hayop demonyo animal aso't pusa baboy daga ibon ahas baka pagong penguin dolphin tegre lion elepante buwaya unggoy bulate kuto zebra dragon camel panda buwitre usa kuwago kuneho ipis lamok toro kabayo bibe manok giraffe langaw uod kambing garapata kwala kalabaw pating itik kangaroo oso isda butiki bubuyog surot linta pokemon tipaklong tupa uwak kulisap octopus tuko bayawak starfish jellyfish langam iguana paniki gamogamo paroparo balyena"
 		});
 	}, 3000);
 	setTimeout(() => {
