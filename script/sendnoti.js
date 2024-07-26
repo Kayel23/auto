@@ -2,18 +2,18 @@ const axios = require("axios");
 const fs = require("fs-extra");
 const path = require("path");
 
-module.exports.config = {
+module.exports.☺️config = {
 	name: "sendnoti",
 	version: "1.1.0",
 	role: 2,
 	description: "Sends a message to all groups and can only be done by the admin.",
-	hasPrefix: false,
+	hasPrefix: true,
 	aliases: ["noti"],
 	usages: "[Text]",
 	cooldown: 0,
 };
 
-module.exports.run = async function ({ api, event, args, admin }) {
+module.exports.☺️run = async function ({ api, event, args, admin }) {
 	const threadList = await api.getThreadList(100, null, ["INBOX"]);
 	let sentCount = 0;
 	const custom = args.join(" ");
@@ -21,7 +21,7 @@ module.exports.run = async function ({ api, event, args, admin }) {
 	async function sendMessage(thread) {
 		try {
 			await api.sendMessage(
-`🟢🟡🔴\n ----------------\n『 𝐍𝐎𝐓𝐈𝐅𝐈𝐂𝐀𝐓𝐈𝐎𝐍 』\n\n ----------------\n𝑴𝒆𝒔𝒔𝒂𝒈𝒆 𝒇𝒓𝒐𝒎 𝒂𝒅𝒎𝒊𝒏:「${custom}」\n _________________________`,
+`››𝑴𝒆𝒔𝒔𝒂𝒈𝒆 𝒇𝒓𝒐𝒎 𝒂𝒅𝒎𝒊𝒏:\n\n${custom}`,
 				thread.threadID
 			);
 			sentCount++;
